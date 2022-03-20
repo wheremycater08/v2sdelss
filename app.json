@@ -1,0 +1,30 @@
+{
+  "name": "v2sdelss",
+  "description": "将v2部署在Heroku上",
+  "keywords": [
+    "v2ray VMess VLESS"
+  ],
+  "env": {
+    "PROTOCOL": {
+      "description": "协议VMess或VLESS，请填小写的vmess或vless",
+      "value": "vmess",
+      "required": true
+    },
+    "UUID": {
+      "description": "用户的主ID",
+      "value": "",
+      "required": false
+    },
+    "WS_PATH": {
+      "description": "websocket路径",
+      "value": "/ray",
+      "required": true
+    }
+  },
+  "website": "https://github.com/wheremycater08/v2sdelss",
+  "repository": "https://github.com/wheremycater08/v2sdelss",
+  "stack": "container",
+  "features": [
+    "runtime-dyno-metadata"
+  ]
+}
